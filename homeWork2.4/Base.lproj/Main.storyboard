@@ -38,7 +38,7 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <connections>
-                                            <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vja-Xq-nb4"/>
+                                            <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="gqP-D2-QZb"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -72,7 +72,7 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                         <connections>
-                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="1FH-v6-4SZ"/>
+                                            <action selector="redSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="oo5-N6-dGg"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -99,14 +99,14 @@
                                         </constraints>
                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                         <connections>
-                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="l0i-0M-Bd6"/>
+                                            <action selector="blueSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qqE-4N-BJc"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="B6R-6M-Qf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8KF-xF-0b7"/>
                             <constraint firstItem="ySp-KJ-CSc" firstAttribute="top" secondItem="Ay9-pl-Tr1" secondAttribute="bottom" constant="36" id="Ee9-cg-naN"/>
@@ -144,11 +144,11 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
