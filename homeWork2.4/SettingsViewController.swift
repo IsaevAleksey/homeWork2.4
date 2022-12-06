@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
     
     @IBOutlet var colorView: UIView!
     
@@ -19,12 +19,16 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    var delegate: SettingsViewControllerDelegate!
+    var backgroundColor: UIColor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
         
         changeColor()
+        
+        colorView.backgroundColor = backgroundColor
         
         redValue.text = String(format: "%.2f", redSlider.value)
         greenValue.text = String(format: "%.2f", greenSlider.value)
@@ -40,7 +44,13 @@ class ViewController: UIViewController {
         greenValue.text = String(format: "%.2f", greenSlider.value)
         blueValue.text = String(format: "%.2f", blueSlider.value)
     }
-
+    
+    
+    @IBAction func donePressed() {
+        delegate.setNewColor(color: colorView.backgroundColor ?? .white)
+        dismiss(animated: true)
+    }
+    
     private func changeColor () {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
