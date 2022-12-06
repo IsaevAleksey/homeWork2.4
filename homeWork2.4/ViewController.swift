@@ -23,25 +23,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 10
+        
         changeColor()
+        
+        redValue.text = String(format: "%.2f", redSlider.value)
+        greenValue.text = String(format: "%.2f", greenSlider.value)
+        blueValue.text = String(format: "%.2f", blueSlider.value)
     }
     
-    @IBAction func redSliderAction(_ sender: UISlider) {
-        changeColor()
-        redValue.text = String(round(redSlider.value * 100) / 100)
-    }
     
-    @IBAction func greenSliderAction(_ sender: UISlider) {
+    @IBAction func rgbSlider(_ sender: UISlider) {
+        
         changeColor()
-        greenValue.text = String(round(greenSlider.value * 100) / 100)
-  
+        
+        redValue.text = String(format: "%.2f", redSlider.value)
+        greenValue.text = String(format: "%.2f", greenSlider.value)
+        blueValue.text = String(format: "%.2f", blueSlider.value)
     }
-    
-    @IBAction func blueSliderAction(_ sender: UISlider) {
-        changeColor()
-        blueValue.text = String(round(blueSlider.value * 100) / 100)
-    }
-    
+
     private func changeColor () {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
