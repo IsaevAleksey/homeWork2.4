@@ -39,6 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9322D3C12940F9C2002E3B04 /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				937829BA293FB322009C332B /* ColorViewController.swift */,
+				93AE485F291FA67C0031D1B0 /* SettingsViewController.swift */,
+			);
+			path = VIewControllers;
+			sourceTree = "<group>";
+		};
+		9322D3C22940F9F0002E3B04 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				93AE4861291FA67C0031D1B0 /* Main.storyboard */,
+				93AE4866291FA67E0031D1B0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9322D3C32940FA18002E3B04 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				93AE485B291FA67C0031D1B0 /* AppDelegate.swift */,
+				93AE485D291FA67C0031D1B0 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9322D3C42940FA1F002E3B04 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				93AE4864291FA67E0031D1B0 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
 		93AE484F291FA67C0031D1B0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +93,10 @@
 		93AE485A291FA67C0031D1B0 /* homeWork2.4 */ = {
 			isa = PBXGroup;
 			children = (
-				93AE485B291FA67C0031D1B0 /* AppDelegate.swift */,
-				93AE485D291FA67C0031D1B0 /* SceneDelegate.swift */,
-				937829BA293FB322009C332B /* ColorViewController.swift */,
-				93AE485F291FA67C0031D1B0 /* SettingsViewController.swift */,
-				93AE4861291FA67C0031D1B0 /* Main.storyboard */,
-				93AE4864291FA67E0031D1B0 /* Assets.xcassets */,
-				93AE4866291FA67E0031D1B0 /* LaunchScreen.storyboard */,
+				9322D3C12940F9C2002E3B04 /* VIewControllers */,
+				9322D3C22940F9F0002E3B04 /* Storyboards */,
+				9322D3C32940FA18002E3B04 /* App */,
+				9322D3C42940FA1F002E3B04 /* Resourses */,
 				93AE4869291FA67E0031D1B0 /* Info.plist */,
 			);
 			path = homeWork2.4;
